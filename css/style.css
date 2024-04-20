@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 .center {
@@ -154,10 +155,94 @@ header h2{
 }
 
 footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #f8f9fa; /* cor de fundo do footer */
     padding: 20px 0; /* espaçamento interno do footer */
     text-align: center;
 }
+
+.minhas-noticias {
+    text-align: center;
+}
+.minhas-noticias h2{
+    padding: 15px;
+}
+
+.minhas-noticias ul li{
+    color: #639ac9;
+    text-decoration: underline;
+    font-size: 18px;
+    padding: 7px;
+}
+
+.newspaper-text {
+    column-count: 2;
+    column-gap: 40px; /* Espaçamento entre as colunas */
+}
+
+.newspaper-text .column {
+    display: inline-block;
+    width: 100%; /* Garante que as colunas se ajustem ao espaço disponível */
+}
+
+/* Estilos opcionais para melhorar a aparência */
+.newspaper-text p {
+    margin: 0 0 20px; /* Margem inferior para separar os parágrafos */
+    text-align: justify; /* Justificar o texto */
+}
+.contact-form {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 25%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-form textarea {
+    height: 100px;
+  }
+  
+  .contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact-form input[type="error"],
+  .contact-form textarea[type="error"] {
+    border: 1px solid red;
+  }
+  
+  .contact-form .error-message {
+    color: red;
+    margin-top: 5px;
+  }
+  
