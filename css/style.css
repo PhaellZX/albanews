@@ -152,3 +152,12 @@ header h2{
     height: 40px;
     background-color: rgba(0,0,0,0.6);
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* cor de fundo do footer */
+    padding: 20px 0; /* espaçamento interno do footer */
+    text-align: center;
+}
