@@ -32,10 +32,6 @@ header h2{
     color: #222;
 }
 
-.logo{
-    margin-top: 10px;
-}
-
 .wraper-header {
     padding: 40px 0;
     width: 100%;
@@ -244,5 +240,10 @@ footer {
   .contact-form .error-message {
     color: red;
     margin-top: 5px;
+  }
+
+   .albanews {
+    top: 100px;
+    width: 270px;
   }
   
