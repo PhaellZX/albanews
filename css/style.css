@@ -11,7 +11,9 @@
     margin: 0 auto;
     padding: 0 2%;
     flex-wrap: wrap;
+    justify-content: center; /* Add this line */
 }
+
 
 .about-header {
     width: 100%;
@@ -99,6 +101,7 @@ header h2{
 .noticia-destaque-single h3 {
     padding: 10px;
     color: white;
+    background-color: rgba(0,0,0,0.6);
 }
 
 .outras-noticias-1 {
@@ -121,17 +124,29 @@ header h2{
     border: 2px solid white;
     background-color: #222;
     position: relative;
+    font-size: 8px;
 }
 
 .outra-noticia-2-single{
-    cursor: pointer;
-    width: 25%;
-    padding-top: 14%;
+    width: 50%;
+    padding-top: 30%;
     background-size: cover;
     background-position: center;
     border: 2px solid white;
     background-color: #222;
     position: relative;
+    font-size: 8px;
+}
+
+.outra-noticia-3-single{
+    width: 50%;
+    padding-top: 30%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    background-color: #222;
+    position: relative;
+    font-size: 8px;
 }
 
 .outra-noticia-1-single h3{
@@ -143,6 +158,14 @@ header h2{
 }
 
 .outra-noticia-2-single h3{
+    padding: 10px;
+    color: white;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.outra-noticia-3-single h3{
     padding: 10px;
     color: white;
     width: 100%;
@@ -177,9 +200,14 @@ footer {
     column-gap: 40px; /* Espaçamento entre as colunas */
 }
 
-.newspaper-text .column {
+.newspaper-text .column1 {
     display: inline-block;
     width: 100%; /* Garante que as colunas se ajustem ao espaço disponível */
+}
+
+.newspaper-text .column2 {
+    width: 100%; /* Garante que as colunas se ajustem ao espaço disponível */
+    text-align: right; /* Alinha o texto à direita */
 }
 
 /* Estilos opcionais para melhorar a aparência */
@@ -242,8 +270,4 @@ footer {
     margin-top: 5px;
   }
 
-   .albanews {
-    top: 100px;
-    width: 270px;
-  }
   
