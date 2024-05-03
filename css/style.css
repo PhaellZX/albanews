@@ -226,7 +226,7 @@ footer {
 
 .newspaper-text .column2 {
     width: 100%; /* Garante que as colunas se ajustem ao espaço disponível */
-    text-align: right; /* Alinha o texto à direita */
+    text-align: left; /* Alinha o texto à direita */
 }
 
 /* Estilos opcionais para melhorar a aparência */

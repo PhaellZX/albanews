@@ -39,22 +39,22 @@
             <div class="center">
                 <div class="noticias-wraper-1">
                     <div class="noticia-destaque">
-                        <div style="background-image: url('images/image01.jpg')" class="noticia-destaque-single">
-                            <h3>A Imagem da Escola Albatroz, sua importância e relevância</h3>
+                        <div style="background-image: url('images/image05.jpg')" class="noticia-destaque-single">
+                            <h3>Albatroz de asas curtas? Falta de programação cultural na escola preocupa alunos</h3>
                         </div>
                     </div>
                     <div class="outras-noticias-1">
-                        <div style="background-image: url('images/em_breve.png');" class="outra-noticia-1-single">
-                            <h3>Uma notícia</h3>
+                        <div style="background-image: url('images/celulares_e_escola.jpg');" class="outra-noticia-1-single">
+                            <h3>Celulares na Escola Albatroz: Proibidos ou Aliados?</h3>
                         </div>
-                        <div style="background-image: url('images/criacao_vida.jpg');" class="outra-noticia-2-single">
-                            <h3>Alunos da Escola Albatroz Exploram Crenças sobre a Origem da Vida</h3>
+                        <div style="background-image: url('images/Estudo_e_diversao.jpg');" class="outra-noticia-2-single">
+                            <h3>Equilíbrio Perfeito: Como Conciliar Estudos e Diversão</h3>
                         </div>
-                        <div style="background-image: url('images/redes_sociais.jpg');" class="outra-noticia-3-single">
-                            <h3>Redes Sociais Agitam a Turma 201!</h3>
+                        <div style="background-image: url('images/influencia_culinaria_escola.jpg');" class="outra-noticia-3-single">
+                            <h3>Influência da Culinária da Escola Albatroz no Desempenho dos Alunos</h3>
                         </div>
-                        <div style="background-image: url('images/em_breve.png');" class="outra-noticia-0-single">
-                            <h3>Uma Noticia</h3>
+                        <div style="background-image: url('images/professores_na_era_digital.jpg');" class="outra-noticia-0-single">
+                            <h3>Professores na Era Digital: Explorando Ferramentas Online para Aprimorar o Aprendizado</h3>
                         </div>
                     </div>
                 </div>
@@ -95,25 +95,31 @@
             //.noticia-destaque-single
             let noticias = document.querySelector('.noticia-destaque-single');
             noticias.addEventListener('click',()=>{
-                window.location.href="pages/A_Imagem_da_Escola_Albatroz_sua_importância_e_relevancia.html";
+                window.location.href="pages/Albatroz_de_asas_curtas_Falta_de_programação_cultural_na_escola_preocupa_alunos.html";
             })
 
             //.outra-noticia-1-single
-            //let noticias01 = document.querySelector('.outra-noticia-1-single')
-            //noticias01.addEventListener('click',()=>{
-             //   window.location.href="pages/Equipamentos_Esportivos_em_Falta_Obstaculo_para_a_Educação_Fisica_na_Escola_Albatroz.html";
-            //})
+            let noticias01 = document.querySelector('.outra-noticia-1-single')
+            noticias01.addEventListener('click',()=>{
+                window.location.href="pages/Celulares_na_Escola_Albatroz_Proibidos_ou_Aliados.html";
+            })
 
              //.outra-noticia-2-single
              let noticias02 = document.querySelector('.outra-noticia-2-single')
             noticias02.addEventListener('click',()=>{
-                window.location.href="pages/Desvendando_os_Misterios_da_Criacao_Alunos_da Escola_Albatroz_Exploram_Crencas_sobre_a_Origem_da_Vida.html";
+                window.location.href="pages/Equilíbrio_Perfeito_Como_Conciliar_Estudos_e_Diversao.html";
             })
 
             //.outra-noticia-3-single
             let noticias03 = document.querySelector('.outra-noticia-3-single')
             noticias03.addEventListener('click',()=>{
-                window.location.href="pages/Redes_Sociais_Agitam_a_urma_201.html";
+                window.location.href="pages/Influência_da_Culinaria_da_Escola_Albatroz_no_Desempenho_dos_Alunos.html";
+            })
+
+             //.outra-noticia-0-single
+             let noticias00 = document.querySelector('.outra-noticia-0-single')
+            noticias00.addEventListener('click',()=>{
+                window.location.href="pages/Professores_na_Era_Digital_Explorando_Ferramentas_Online_para_Aprimorar_o_Aprendizado.html";
             })
         </script>
 </body>
