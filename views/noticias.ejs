@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+<br>
+<!-- Banco de Dados das Noticias -->
+<div class="minhas-noticias">
+    <h2>Últimas Notícias</h2>
+    <ul>
+        <% news.forEach(function(noticia) { %> <!-- Itera sobre cada notícia -->
+            <li>
+                <a href="/noticias/<%= noticia._id %>"><!-- Link para a página da notícia -->
+                    <%= noticia.title %> <!-- Exibe o título da notícia -->
+                </a>
+            </li>
+        <% }); %>
+    </ul>
+</div>
+
+<%- include('partials/footer') %>

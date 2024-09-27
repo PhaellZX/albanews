@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.center {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    flex-wrap: wrap;
+    justify-content: center; /* Add this line */
+}
+
+
+.about-header {
+    width: 100%;
+    background-color: #639ac9;
+}
+
+.about-header{
+    color: white;
+    padding: 8px;
+}
+
+header h2 span{
+    color:  #639ac9;
+}
+
+header h2{
+    font-size: 35px;
+    color: #222;
+}
+
+.wraper-header {
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-ads {
+    width: 500px;
+    height: 90px;
+    background-color: #222;
+    position: relative;
+    
+}
+
+.banner-ads h2{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.menu-main{
+    width: 100%;
+    background-color: #639ac9;
+    padding: 8px;   
+}
+
+.menu-main a {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-main a:hover{
+    text-decoration: underline;
+}
+
+.noticias-wraper-1{
+    display: flex;
+    width: 100%;;
+}
+
+.noticia-destaque {
+    width: 60%;
+    height: 400px; /* Definir uma altura fixa para a seção */
+    position: relative;
+    background-color: #222;
+    border: 2px solid white;
+}
+
+.noticia-destaque-single {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.noticia-destaque-single h3 {
+    color: white;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box; /* Garantir que o padding não expanda o elemento */
+    overflow: hidden; /* Evitar que o texto ultrapasse os limites */
+}
+
+.noticia-destaque img {
+    width: 100%;
+    height: auto; /* Manter a proporção da imagem */
+    display: block;
+}
+
+
+.outras-noticias-1 {
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+}
+
+.outras-noticias-2 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.outra-noticia-1-single {
+    width: 50%;
+    padding-top: 30%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    background-color: #222;
+    position: relative;
+    font-size: 8px;
+}
+
+.outra-noticia-2-single{
+    width: 50%;
+    padding-top: 30%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    background-color: #222;
+    position: relative;
+    font-size: 8px;
+}
+
+.outra-noticia-3-single{
+    width: 50%;
+    padding-top: 30%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    background-color: #222;
+    position: relative;
+    font-size: 8px;
+}
+
+.outra-noticia-0-single{
+    width: 50%;
+    padding-top: 30%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    background-color: #222;
+    position: relative;
+    font-size: 8px;
+}
+
+.outra-noticia-1-single h3{
+    padding: 10px;
+    color: white;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.outra-noticia-2-single h3{
+    padding: 10px;
+    color: white;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.outra-noticia-3-single h3{
+    padding: 10px;
+    color: white;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.outra-noticia-0-single h3{
+    padding: 10px;
+    color: white;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* cor de fundo do footer */
+    padding: 20px 0; /* espaçamento interno do footer */
+    text-align: center;
+}
+
+.minhas-noticias {
+    text-align: center;
+}
+.minhas-noticias h2{
+    padding: 15px;
+}
+
+.minhas-noticias ul li{
+    color: #639ac9;
+    text-decoration: underline;
+    font-size: 18px;
+    padding: 7px;
+}
+
+.newspaper-text {
+    column-count: 2;
+    column-gap: 40px; /* Espaçamento entre as colunas */
+}
+
+.newspaper-text .column1 {
+    display: inline-block;
+    width: 100%; /* Garante que as colunas se ajustem ao espaço disponível */
+}
+
+.newspaper-text .column2 {
+    width: 100%; /* Garante que as colunas se ajustem ao espaço disponível */
+    text-align: left; /* Alinha o texto à direita */
+}
+
+/* Estilos opcionais para melhorar a aparência */
+.newspaper-text p {
+    margin: 0 0 20px; /* Margem inferior para separar os parágrafos */
+    text-align: justify; /* Justificar o texto */
+}
+.contact-form {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 25%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-form textarea {
+    height: 100px;
+  }
+  
+  .contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact-form input[type="error"],
+  .contact-form textarea[type="error"] {
+    border: 1px solid red;
+  }
+  
+  .contact-form .error-message {
+    color: red;
+    margin-top: 5px;
+  }
+
+  

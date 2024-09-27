@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet" />
+    <title>Alba News - Home</title>
+    <link rel="icon" href="/images/logo_A.png" type="image/x-icon">
+    <style>
+        .noticias-destaque-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Adiciona espaço entre os elementos */
+        }
+        .noticia-destaque {
+            flex: 1;
+            position: relative;
+            background-color: #f0f0f0;
+            box-sizing: border-box;
+            background-size: cover;
+            background-position: center;
+            height: 300px; /* Define uma altura fixa para manter o tamanho consistente */
+            min-width: 610px; /* Garante que a notícia destaque tenha largura mínima */
+        }
+
+        .noticia-destaque h2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7); /* Fundo preto com transparência */
+            color: white; /* Texto branco */
+            padding: 10px;
+            margin: 0;
+            font-size: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+        }
+
+        .outras-noticias {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Mantém as colunas com tamanho igual */
+            grid-template-rows: repeat(2, 1fr); /* Ajusta a altura das linhas */
+            gap: 10px; /* Espaçamento entre as notícias */
+            flex: 1;
+        }
+        .noticia-item {
+            background-color: #e0e0e0;
+            position: relative;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+            height: 140px; /* Altura consistente para todas as notícias */
+            width: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        .noticia-item h3 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7); /* Fundo preto com transparência */
+            color: white; /* Texto branco */
+            padding: 10px;
+            margin: 0;
+            font-size: 13px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <div class="about-header">
+                <p style="text-align: center;">Um site de notícias da escola Albatroz.</p>
+            </div>
+            <div class="wraper-header">
+                <div class="logo">
+                    <a href="/"><img style="width: 270px;" src="/images/albanews02.png"></a>
+                </div>
+                <div class="banner-ads">
+                    <h2><span style="font-size: 22px;">Alba News</span><br/>Insira um anúncio aqui</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="center">
+        <div class="menu-main">
+            <a href="/">Home</a>
+            <a href="/noticias">Noticias</a>
+            <a href="/sobre">Sobre</a>
+            <a href="/contato">Contato</a>
+        </div>
+    </div>

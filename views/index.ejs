@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+
+<h1 style="text-align: center;">Notícias em Destaque</h1>
+
+<section class="noticias-1">
+    <div class="center">
+        <div class="noticias-destaque-container">
+            <!-- Notícia em destaque (última) -->
+            <% if (news.length > 0) { %>
+                <a href="/noticias/<%= news[news.length - 1]._id %>" class="noticia-destaque" style="background-image: url('<%= news[news.length - 1].image %>'); background-size: cover;">
+                    <h2><%= news[news.length - 1].title %></h2>
+                </a>
+
+                <!-- Outras 4 notícias -->
+                <div class="outras-noticias">
+                    <% for (let i = 0; i < news.length - 1 && i < 4; i++) { %>
+                        <a href="/noticias/<%= news[i]._id %>" class="noticia-item" style="background-image: url('<%= news[i].image %>'); background-size: cover;">
+                            <h3><%= news[i].title %></h3>
+                        </a>
+                    <% } %>
+                </div>
+            <% } else { %>
+                <p>Nenhuma notícia encontrada.</p>
+            <% } %>
+        </div>
+    </div>
+</section>
+<%- include('partials/footer') %>

@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+<br>
+<div class="center">
+    <div class="history">
+        <h2 style="text-align: center;"><%= newsItem.title %></h2>
+        <br>
+        <p style="text-align: center;"><i>Data da Publicação: <%= newsItem.publicationDate.toLocaleDateString('pt-BR') %></i></p>
+        <br>
+        <img style="width: 70%; padding-left: 240px;" src="<%= newsItem.image %>"><br><br>
+        <p style="text-align: center;">Autores: <i><%= newsItem.authors %></i></p>
+        <br><br>
+        <div class="newspaper-text">
+            <div class="column1">
+                <p><%- newsItem.column1Content %></p>
+                <br><br>
+            </div>
+            <div class="column2">
+                <p><%- newsItem.column2Content %></p> <!-- Exibe o conteúdo da coluna 2 -->
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('partials/footer') %>
